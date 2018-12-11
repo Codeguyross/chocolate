@@ -10,7 +10,8 @@ that. First, as always, import we import the necessary modules. ::
     from sklearn.ensemble import GradientBoostingClassifier
     from sklearn.metrics import precision_score, recall_score
     from sklearn.model_selection import train_test_split
-
+    
+    import matplotlib.pyplot as plt
     import chocolate as choco
 
 Note that we imported both the :func:`sklearn.metrics.precision_score` and
