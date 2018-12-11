@@ -31,7 +31,7 @@ When this overwhelming task is done, you'd choose from our :ref:`sampling
 <Search Algorithms>` algorithms the one that you prefer. We will use quasi
 random sampling because its ze best. ::
 
-    sampler = choco.QuasiRandom(conn, space, random_state=42, skip=0)
+    sampler = choco.QuasiRandom(conn, space, seed=42, skip=0)
 
 Now comes the funny part, using Chocolate, a process usually does one and only
 one evaluation. So you'd just have to ask the sampler: "Good morning! What's the
