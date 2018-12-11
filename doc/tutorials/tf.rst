@@ -186,7 +186,7 @@ Ho yeah, I forgot about the last bit of code. The one that does the trick. ::
 
         space = create_space()
         conn = choco.SQLiteConnection(url="sqlite:///db.db")
-        sampler = choco.Bayes(conn, space, random_state=42, skip=0)
+        sampler = choco.Bayes(conn, space)
 
         token, params = sampler.next()
         loss = score_cnn(X, y, params)
