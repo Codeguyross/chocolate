@@ -54,7 +54,7 @@ connection and explore the configurations using one of the algorithm. ::
     X, y = make_classification(n_samples=80000, random_state=1)
 
     conn = choco.SQLiteConnection(url="sqlite:///db.db")
-    sampler = choco.QuasiRandom(conn, space, random_state=42, skip=0)
+    sampler = choco.QuasiRandom(conn, space, seed=42, skip=0, clear_db=True)
 
     token, params = sampler.next()
     loss = score_svm(X, y, **params)
